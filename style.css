@@ -14,14 +14,17 @@ body {
 .videoLoop video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /*Faz o vídeo:
+    object-fit: cover;
+    /*Faz o vídeo:
                         manter a proporção original
                         preencher toda a tela
                         cortar as partes que sobrarem*/
 
-    opacity: 0; /*O vídeo começa invisível.*/
+    opacity: 0;
+    /*O vídeo começa invisível.*/
     filter: blur(20px);
-    animation: transicaoInicial 3s ease forwards;/*Aplica uma animação chamada transicaoInicial com:
+    animation: transicaoInicial 3s ease forwards;
+    /*Aplica uma animação chamada transicaoInicial com:
                                                    3s -> duração de 3 segundos
                                                    ease -> aceleração suave
                                                    forwards -> mantém o estado final da animação*/
@@ -29,54 +32,92 @@ body {
 
 @keyframes transicaoInicial {
     from {
-        opacity: 0;/*o vídeo começa totalmente invisível.*/
+        opacity: 0;
+        /*o vídeo começa totalmente invisível.*/
         filter: blur(20px);
     }
 
     to {
-        opacity: 1;/*o vídeo termina totalmente visível.*/
+        opacity: 1;
+        /*o vídeo termina totalmente visível.*/
         filter: blur(0px);
     }
 }
 
 .nome {
     position: absolute;
+    width: 21em;
     margin-left: 25px;
-    color: #643C0F;
+    color: #e3e3e3;
+    text-shadow:
+        0 0 5px #00f,
+        0 0 10px #0ff,
+        2px 2px 2px #0ff,
+        -2px -2px 2px #0ff;
     display: flex;
     flex-direction: column;
 }
+
 .zenitsu {
     font-size: 3.5rem;
-    font-weight: bold;   
+    font-weight: bold;
 }
 
 .zenitsu span {
-  opacity: 0;
-  display: inline-block; /* display: inline-block mantém os elementos na mesma linha, 
+    opacity: 0;
+    display: inline-block;
+    /* display: inline-block mantém os elementos na mesma linha, 
   diferente do display: flex que coloca um item em baixo do outro*/
-  animation: aparicao 3s ease forwards, OndaInfinita 4s ease-in-out infinite;
+    animation: aparicao 3s ease forwards, OndaInfinita 4s ease-in-out infinite;
 }
 
 /* atraso em cada palavra */
-.zenitsu span:nth-child(1) { animation-delay: 0s; }
-.zenitsu span:nth-child(2) { animation-delay: 0.3s; }
-.zenitsu span:nth-child(3) { animation-delay: 0.6s; }
-.zenitsu span:nth-child(4) { animation-delay: 0.9s; }
-.zenitsu span:nth-child(5) { animation-delay: 1.3s; }
-.zenitsu span:nth-child(6) { animation-delay: 1.6s; }
-.zenitsu span:nth-child(7) { animation-delay: 1.9s; }
+.zenitsu span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.zenitsu span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.zenitsu span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.zenitsu span:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.zenitsu span:nth-child(5) {
+    animation-delay: 1.3s;
+}
+
+.zenitsu span:nth-child(6) {
+    animation-delay: 1.6s;
+}
+
+.zenitsu span:nth-child(7) {
+    animation-delay: 1.9s;
+}
 
 @keyframes aparicao {
-  to {
-    opacity: 1;
-  }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes OndaInfinita {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .titulo {
@@ -86,7 +127,54 @@ body {
     opacity: 0;
     animation: aparicao 3s ease forwards;
     animation-delay: 2s;
-text-align: center;
+    text-align: center;
+}
+
+
+.scroll {
+    color: #e3e3e356;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 30px;
+    left: 48%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+
+}
+
+.scroll span {
+    height: 16px;
+    font-weight: 1000;
+    font-size: xxx-large;
+    opacity: 0;
+    animation: scrollar 3s infinite;
+}
+
+.scroll span:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.scroll span:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.scroll span:nth-child(3) {
+    animation-delay: 3s;
+}
+
+@keyframes scrollar {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 
@@ -95,43 +183,45 @@ text-align: center;
 
 
 
-
-
-
-/* Para tablets e telas médias */
-@media (max-width: 768px) { 
-    .nome {    
-        top: 83%;      
-        left: 47%;
+@media (max-width: 768px) {
+    .nome {
+        top: 83%;
+        left: 52%;
         transform: translate(-50%, -50%);
-        margin-left: 0;
+        width: 12em;
     }
 
     .zenitsu {
         font-size: 2em;
-        max-width: 100%; 
+        max-width: 100%;
     }
 
     .titulo {
-        font-size: 1em; 
+        font-size: 1em;
         max-width: 100%;
         text-align: center;
     }
 
     .videoLoop video {
-    width: 108%
-}
+        width: 113%
+    }
+
+    .scroll {
+        left: 54%;
+    }
 }
 
 
 @media (max-width: 430px) {
     .videoLoop video {
-    width: 113%;
-}
-    .nome {    
-        top: 85%;      
-        left: 50%;
+        width: 113%;
+    }
+
+    .nome {
+        top: 83%;
+        left: 46%;
         transform: translate(-50%, -50%);
+        width: 12em;
     }
 
     .zenitsu {
@@ -144,5 +234,9 @@ text-align: center;
         font-size: 1em;
         max-width: 100%;
         text-align: center;
+    }
+
+    .scroll {
+        left: 52%;
     }
 }
