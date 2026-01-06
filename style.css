@@ -1,0 +1,121 @@
+body {
+    background-color: black;
+}
+
+.videoLoop {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.videoLoop video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*Faz o vídeo:
+                        manter a proporção original
+                        preencher toda a tela
+                        cortar as partes que sobrarem*/
+
+    opacity: 0; /*O vídeo começa invisível.*/
+    filter: blur(20px);
+    animation: transicaoInicial 3s ease forwards;/*Aplica uma animação chamada transicaoInicial com:
+                                                   3s -> duração de 3 segundos
+                                                   ease -> aceleração suave
+                                                   forwards -> mantém o estado final da animação*/
+}
+
+@keyframes transicaoInicial {
+    from {
+        opacity: 0;/*o vídeo começa totalmente invisível.*/
+        filter: blur(20px);
+    }
+
+    to {
+        opacity: 1;/*o vídeo termina totalmente visível.*/
+        filter: blur(0px);
+    }
+}
+
+.nome {
+    position: absolute;
+    margin-left: 25px;
+    color: #643C0F;
+    display: flex;
+    flex-direction: column;
+}
+.zenitsu {
+    font-size: 3.5rem;
+    font-weight: bold;   
+}
+
+.zenitsu span {
+  opacity: 0;
+  display: inline-block; /* display: inline-block mantém os elementos na mesma linha, 
+  diferente do display: flex que coloca um item em baixo do outro*/
+  animation: aparicao 3s ease forwards, OndaInfinita 4s ease-in-out infinite;
+}
+
+/* atraso em cada palavra */
+.zenitsu span:nth-child(1) { animation-delay: 0s; }
+.zenitsu span:nth-child(2) { animation-delay: 0.3s; }
+.zenitsu span:nth-child(3) { animation-delay: 0.6s; }
+.zenitsu span:nth-child(4) { animation-delay: 0.9s; }
+.zenitsu span:nth-child(5) { animation-delay: 1.3s; }
+.zenitsu span:nth-child(6) { animation-delay: 1.6s; }
+.zenitsu span:nth-child(7) { animation-delay: 1.9s; }
+
+@keyframes aparicao {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes OndaInfinita {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.titulo {
+    font-size: 1.2rem;
+    margin-top: 8px;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: aparicao 3s ease forwards;
+    animation-delay: 2s;
+text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) { 
+    .nome{    
+        top: 83%;      
+        left: 47%;
+        transform: translate(-50%, -50%);
+        margin-left: 0;
+}
+    .zenitsu {
+        font-size: 2.5em;
+        max-width: 238px;  
+    }
+}
+@media (max-width: 450px) {
+    .zenitsu {
+        font-size: 2em;
+        max-width: 190px;  
+    }
+    .titulo{
+        font-size: 1.1em;
+    }
+}
