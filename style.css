@@ -98,24 +98,44 @@ text-align: center;
 
 
 
+/* Para tablets e telas médias */
 @media (max-width: 768px) { 
-    .nome{    
+    .nome {    
         top: 83%;      
         left: 47%;
         transform: translate(-50%, -50%);
         margin-left: 0;
-}
-    .zenitsu {
-        font-size: 2.5em;
-        max-width: 238px;  
     }
-}
-@media (max-width: 450px) {
+
     .zenitsu {
         font-size: 2em;
-        max-width: 190px;  
+        max-width: 100%; 
     }
-    .titulo{
+
+    .titulo {
+        font-size: 1em; 
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .nome {    
+        top: 85%;      
+        left: 47%;
+        transform: translate(-50%, -50%);
+    }
+
+    .zenitsu {
+        font-size: 2em;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .titulo {
         font-size: 1.1em;
+        max-width: 100%;
+        text-align: center;
     }
 }
