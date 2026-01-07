@@ -345,28 +345,31 @@ body {
         left: 52%;
     }
     .carrossel {
-        top: 1em;
+        top: 2em;
     }
     .fotos img {
-        width: 6em;
+        width: 10em;
     }
 
     .fotos {
-        height: 4em;
+        height: 8em;
     }
 
     .carrosselDois {
-        top: 7em;
+        top: 11em;
     }
 
     .fotosDois img {
-        width: 6em;
+        width: 10em;
     }
 
     .fotosDois {
-        height: 4em;
+        height: 8em;
     }
 
+ .fundo img{
+    height: 50vh;
+ }
 
 
 }
