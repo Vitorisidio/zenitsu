@@ -291,63 +291,26 @@ body {
         left: 54%;
     }
 
-    .imgDefundo {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
 
-    .imgDefundo img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-
-
-    .carrossel {
-        position: absolute;
-        overflow: hidden;
-        max-width: 100vw;
-        top: 3em;
-    }
 
     .fotos img {
-        width: 30em;
-        border-radius: 10px;
-
+        width: 15em;
     }
 
     .fotos {
-        display: flex;
-        gap: 10px;
-        width: max-content;
-        animation: carrossel 12s linear infinite;
-        height: 23em;
+        height: 10em;
     }
 
-
-
     .carrosselDois {
-        position: absolute;
-        overflow: hidden;
-        max-width: 100vw;
-        top: 28em;
+        top: 15em;
     }
 
     .fotosDois img {
-        width: 30em;
-        border-radius: 10px;
-
+        width: 15em;
     }
 
     .fotosDois {
-        display: flex;
-        gap: 10px;
-        width: max-content;
-        animation: carrosselDois 12s linear infinite;
-        height: 23em;
+        height: 10em;
     }
 
 
@@ -381,4 +344,29 @@ body {
     .scroll {
         left: 52%;
     }
+    .carrossel {
+        top: 1em;
+    }
+    .fotos img {
+        width: 6em;
+    }
+
+    .fotos {
+        height: 4em;
+    }
+
+    .carrosselDois {
+        top: 7em;
+    }
+
+    .fotosDois img {
+        width: 6em;
+    }
+
+    .fotosDois {
+        height: 4em;
+    }
+
+
+
 }
