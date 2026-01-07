@@ -177,7 +177,88 @@ body {
     }
 }
 
+.imgDefundo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 
+.imgDefundo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.carrossel {
+    position: absolute;
+    overflow: hidden;
+    max-width: 100vw;
+    top: 3em;
+}
+
+.fotos img {
+    width: 30em;
+    border-radius: 10px;
+
+}
+
+.fotos {
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    animation: carrossel 12s linear infinite;
+    height: 23em;
+}
+
+
+
+@keyframes carrossel {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+.carrosselDois {
+    position: absolute;
+    overflow: hidden;
+    max-width: 100vw;
+    top: 28em;
+}
+
+.fotosDois img {
+    width: 30em;
+    border-radius: 10px;
+
+}
+
+.fotosDois {
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    animation: carrosselDois 12s linear infinite;
+    height: 23em;
+}
+
+
+
+@keyframes carrosselDois {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
 
 
 
@@ -209,6 +290,67 @@ body {
     .scroll {
         left: 54%;
     }
+
+    .imgDefundo {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .imgDefundo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+
+    .carrossel {
+        position: absolute;
+        overflow: hidden;
+        max-width: 100vw;
+        top: 3em;
+    }
+
+    .fotos img {
+        width: 30em;
+        border-radius: 10px;
+
+    }
+
+    .fotos {
+        display: flex;
+        gap: 10px;
+        width: max-content;
+        animation: carrossel 12s linear infinite;
+        height: 23em;
+    }
+
+
+
+    .carrosselDois {
+        position: absolute;
+        overflow: hidden;
+        max-width: 100vw;
+        top: 28em;
+    }
+
+    .fotosDois img {
+        width: 30em;
+        border-radius: 10px;
+
+    }
+
+    .fotosDois {
+        display: flex;
+        gap: 10px;
+        width: max-content;
+        animation: carrosselDois 12s linear infinite;
+        height: 23em;
+    }
+
+
 }
 
 
