@@ -5,7 +5,7 @@ body {
 .videoLoop {
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    overflow: hidden; /* Tudo que passar do limite é escondido*/
     position: relative;
     display: flex;
     align-items: center;
@@ -74,7 +74,7 @@ body {
 /* atraso em cada palavra */
 .zenitsu span:nth-child(1) {
     animation-delay: 0s;
-}
+} /*dentro de .zenitsu, pega o PRIMEIRO span e ignora o restante*/
 
 .zenitsu span:nth-child(2) {
     animation-delay: 0.3s;
@@ -152,7 +152,7 @@ body {
 
 .scroll span:nth-child(1) {
     animation-delay: 1s;
-}
+} /*dentro de .scroll, pega o PRIMEIRO span e ignora o restante*/
 
 .scroll span:nth-child(2) {
     animation-delay: 2s;
@@ -435,7 +435,7 @@ body {
 }
 
 
-@media (max-width: 430px) {
+@media (max-width: 360px) {
     .videoLoop video {
         width: 113%;
     }
@@ -519,8 +519,8 @@ body {
     .descricao {
         text-align: center;
         margin-left: 18px;
-        max-width: 14em;
-        font-size: 1.2em;
+        max-width: 18em;
+        font-size: 1em;
         margin-top: 42px;
     }
 
@@ -534,9 +534,9 @@ body {
 
     .direita img {
         position: absolute;
-        left: -32px;
-        top: -17em;
-        width: 32em;
-        height: 32em;
+        left: -67px;
+        top: -21em;
+        width: 36em;
+        height: 36em;
     }
 }
