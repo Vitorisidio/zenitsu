@@ -500,6 +500,7 @@ body {
         color: white;
         display: flex;
         flex-direction: column;
+        margin-top: -3em;
     }
 
     .esquerda span {
@@ -520,7 +521,7 @@ body {
         margin-left: 4vw;
         margin-top: 6vh;
         max-width: 85vw;
-        font-size: 1em;
+        font-size: 2.5vh;
         line-height: 1.6;
     }
 
