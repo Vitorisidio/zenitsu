@@ -13,7 +13,7 @@ body {
 
 .videoLoop video {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
     /*Faz o vídeo:
                     manter a proporção original
@@ -46,7 +46,7 @@ body {
 
 .nome {
     position: absolute;
-    width: 21em;
+    width: 24vw;
     margin-left: 25px;
     color: #e3e3e3;
     text-shadow:
@@ -59,7 +59,7 @@ body {
 }
 
 .zenitsu {
-    font-size: 3.5rem;
+    font-size: 4vw;
     font-weight: bold;
 }
 
@@ -121,7 +121,7 @@ body {
 }
 
 .titulo {
-    font-size: 1.2rem;
+    font-size: 2vw;
     margin-top: 8px;
     letter-spacing: 2px;
     opacity: 0;
@@ -137,7 +137,7 @@ body {
     flex-direction: column;
     position: absolute;
     bottom: 30px; /*É a mesma coisa do top, só que em vez de cima ele vem de baixo*/
-    left: 48%;
+    left: 48.5vw;
     transform: translateX(-50%); /*anda 50% da SUA largura para a esquerda*/
     font-size: 1.5em;
 }
@@ -179,8 +179,12 @@ body {
 .imgDefundo {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
+}
+
+.fundo{
+    height: 100vh;
 }
 
 .imgDefundo img {
@@ -193,7 +197,7 @@ body {
     position: absolute;
     overflow: hidden;
     max-width: 100vw;
-    top: 3em;
+    top: 5vh;
 }
 
 .fotos img {
@@ -206,7 +210,7 @@ body {
     gap: 10px;
     width: max-content;
     animation: carrossel 12s linear infinite;
-    height: 23em;
+    height: 40vh;
 }
 
 @keyframes carrossel {
@@ -223,7 +227,7 @@ body {
     position: absolute;
     overflow: hidden;
     max-width: 100vw;
-    top: 28em;
+    top: 52vh;
 }
 
 .fotosDois img {
@@ -236,7 +240,7 @@ body {
     gap: 10px;
     width: max-content;
     animation: carrosselDois 12s linear infinite;
-    height: 23em;
+    height: 40vh;
 }
 
 @keyframes carrosselDois {
@@ -299,13 +303,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50vw;
+    height: 50vh;
+    margin-top: -5vw;
 }
 
 .esquerda span {
     display: flex;
-    margin-top: 74px;
-    margin-left: 77px;
-    font-size: 4em;
+    margin-top: 12vh;
+    margin-left: 9vw;
+    font-size: 7vw;
 
     color: #ffcc33;
     text-shadow:
@@ -315,146 +322,62 @@ body {
 }
 
 .subTitulo {
-    margin-left: 77px;
-    font-size: 1.5em;
+    margin-left: 8vw;
+    font-size: 2.5vw;
 }
 
 .descricao {
-    margin-left: 77px;
-    margin-top: 57px;
-    max-width: 34em;
-    font-size: 1.4em;
+    margin-left: 9vw;
+    margin-top: 6vh;
+    max-width: 47vw;
+    font-size: 1.5vw;
     text-align: center;
 }
 
 .GIF {
-    margin-left: 77px;
-    margin-top: 40px;
+    margin-left: 9vw;
+    margin-top: 6vh;
     filter: brightness(0.5);
 }
 
 .GIF img {
-    width: 35em;
-    height: 20em;
+    width: 33vw;
+    height: 33vh;
 }
+
 
 .direita img {
     overflow: hidden;
-    margin-top: 30px;
-    width: 43em;
-    height: 45em;
+    margin-top: 3vh;
+    width: 58vw;
+    height: 100vh;
     filter: drop-shadow(0 0 18px rgba(255, 215, 0, 0.65)) drop-shadow(0 0 45px rgba(255, 180, 0, 0.45)) drop-shadow(0 0 90px rgba(255, 140, 0, 0.25));
 }
 
+
+    .videoLoop img{
+
+    }
+
 @media (max-width: 768px) {
-    .nome {
-        top: 83%;
-        left: 52%;
-        transform: translate(-50%, -50%);
-        width: 12em;
-    }
-
-    .zenitsu {
-        font-size: 2em;
-        max-width: 100%;
-    }
-
-    .titulo {
-        font-size: 1em;
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .videoLoop video {
-        width: 113%
-    }
-
-    .scroll {
-        left: 54%;
-    }
-
-    .fotos img {
-        width: 15em;
-    }
-
-    .fotos {
-        height: 10em;
-    }
-
-    .carrosselDois {
-        top: 15em;
-    }
-
-    .fotosDois img {
-        width: 15em;
-    }
-
-    .fotosDois {
-        height: 10em;
-    }
-
-    .info {
-        flex-direction: column;
-        width: 100vw;
-    }
-
-    .esquerda {
-        color: white;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .esquerda span {
-        display: flex;
-        margin-left: 24px;
-        font-size: 4em;
-        justify-content: center;
-    }
-
-    .subTitulo {
-        margin-left: 10px;
-        font-size: 1.5em;
-        text-align: center;
-    }
-
-    .descricao {
-        text-align: center;
-        margin-left: 0px;
-        max-width: 26em;
-        font-size: 1.3em;
-        z-index: 1;
-    }
-
-    .GIF {
-        display: none;
-    }
-
-    .direita img {
-        margin-left: 33px;
-    }
-
-}
-
-@media(max-width: 430px) {
     .videoLoop video {
         width: 115%;
     }
 
     .nome {
-        top: 83%;
-        left: 46%;
-        transform: translate(-50%, -50%);
-        width: 12em;
+        top: 81%;
+        margin-left: 0;
+        width: 100vw;
     }
 
     .zenitsu {
-        font-size: 1.9em;
+        font-size: 6.9vw;
         max-width: 100%;
         text-align: center;
     }
 
     .titulo {
-        font-size: 1em;
+        font-size: 4vw;
         max-width: 100%;
         text-align: center;
     }
@@ -463,16 +386,23 @@ body {
         left: 52%;
     }
 
+    .imgDefundo {
+        height: 54vh;
+}
+    .fundo img {
+        height: 54vh;
+    }
+
     .carrossel {
-        top: 8vh;
+        top: 6vh;
     }
 
     .fotos img {
-        width: 10em;
+        width: 40vw;
     }
 
     .fotos {
-        height: 8em;
+        height: 20vh;
     }
 
     .carrosselDois {
@@ -480,16 +410,14 @@ body {
     }
 
     .fotosDois img {
-        width: 10em;
+        width: 40vw;
     }
 
     .fotosDois {
-        height: 8em;
+        height: 20vh;
     }
 
-    .fundo img {
-        height: 52vh;
-    }
+
 
     .info {
         flex-direction: column;
@@ -502,6 +430,7 @@ body {
         display: flex;
         flex-direction: column;
         margin-top: -3em;
+            width: 95vw;
     }
 
     .esquerda span {
@@ -539,6 +468,120 @@ body {
         left: 2vw;
         top: -45vh;
         width: 130vw;
+        height: auto;
+    }
+
+
+}
+
+@media(max-width: 431px) {
+    .videoLoop video {
+        width: 115%;
+    }
+
+    .nome {
+        top: 81%;
+        margin-left: 0;
+    }
+
+    .zenitsu {
+        font-size: 6.9vw;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .titulo {
+        font-size: 4vw;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .scroll {
+        left: 52%;
+    }
+
+    .imgDefundo {
+        height: 54vh;
+}
+    .fundo img {
+        height: 54vh;
+    }
+
+    .carrossel {
+        top: 6vh;
+    }
+
+    .fotos img {
+        width: 40vw;
+    }
+
+    .fotos {
+        height: 20vh;
+    }
+
+    .carrosselDois {
+        top: 30vh;
+    }
+
+    .fotosDois img {
+        width: 40vw;
+    }
+
+    .fotosDois {
+        height: 20vh;
+    }
+
+
+
+    .info {
+        flex-direction: column;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .esquerda {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin-top: -3em;
+            width: 95vw;
+    }
+
+    .esquerda span {
+        display: flex;
+        margin-left: 24px;
+        font-size: 4em;
+        justify-content: center;
+    }
+
+    .subTitulo {
+        margin-left: 10px;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .descricao {
+        text-align: center;
+        margin-left: 4vw;
+        margin-top: 6vh;
+        max-width: 85vw;
+        font-size: 1.9vh;
+        line-height: 1.5;
+    }
+
+    .GIF {
+        display: none;
+    }
+
+    .direita {
+        position: relative;
+    }
+
+    .direita img {
+        position: absolute;
+        left: 11vw;
+        top: -63vh;
+        width: 125vw;
         height: auto;
     }
 }
