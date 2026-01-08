@@ -434,6 +434,113 @@ body {
 
 }
 
+@media (max-width: 430px) {
+    .videoLoop video {
+        width: 115%;
+    }
+
+    .nome {
+        top: 83%;
+        left: 46%;
+        transform: translate(-50%, -50%);
+        width: 12em;
+    }
+
+    .zenitsu {
+        font-size: 1.9em;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .titulo {
+        font-size: 1em;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .scroll {
+        left: 52%;
+    }
+
+    .carrossel {
+        top: 2em;
+    }
+
+    .fotos img {
+        width: 10em;
+    }
+
+    .fotos {
+        height: 8em;
+    }
+
+    .carrosselDois {
+        top: 11em;
+    }
+
+    .fotosDois img {
+        width: 10em;
+    }
+
+    .fotosDois {
+        height: 8em;
+    }
+
+    .fundo img {
+        height: 38vh;
+    }
+
+    .info {
+        flex-direction: column;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .esquerda {
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .esquerda span {
+        display: flex;
+        margin-left: 24px;
+        font-size: 4em;
+        justify-content: center;
+    }
+
+    .subTitulo {
+        margin-left: 10px;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .descricao {
+        text-align: center;
+        margin-left: 18px;
+        max-width: 18em;
+        font-size: 1em;
+        margin-top: 42px;
+    }
+
+    .GIF {
+        display: none;
+    }
+
+    .direita {
+        position: relative;
+    }
+
+    .direita img {
+        position: absolute;
+        left: -67px;
+        top: -37em;
+        width: 36em;
+        height: 36em;
+    }
+}
+
+
 
 @media (max-width: 360px) {
     .videoLoop video {
