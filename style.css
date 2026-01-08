@@ -463,7 +463,7 @@ body {
     }
 
     .carrossel {
-        top: 2em;
+        top: 8vh;
     }
 
     .fotos img {
@@ -475,7 +475,7 @@ body {
     }
 
     .carrosselDois {
-        top: 11em;
+        top: 30vh;
     }
 
     .fotosDois img {
@@ -521,6 +521,7 @@ body {
         margin-top: 6vh;
         max-width: 85vw;
         font-size: 1em;
+        line-height: 1.6;
     }
 
     .GIF {
@@ -539,6 +540,5 @@ body {
         height: auto;
     }
 }
-
 
 
