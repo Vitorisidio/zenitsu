@@ -422,6 +422,7 @@ body {
         margin-left: 0px;
         max-width: 26em;
         font-size: 1.3em;
+        z-index: 1;
     }
 
     .GIF {
@@ -536,7 +537,7 @@ body {
     .direita img {
         position: absolute;
         left: 2vw;
-        top: -51vh;
+        top: -45vh;
         width: 130vw;
         height: auto;
     }
