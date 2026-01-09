@@ -359,7 +359,7 @@ body {
 
     }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .videoLoop video {
         width: 115%;
     }
@@ -417,8 +417,6 @@ body {
         height: 20vh;
     }
 
-
-
     .info {
         flex-direction: column;
         width: 100vw;
@@ -431,17 +429,18 @@ body {
         flex-direction: column;
         margin-top: -3em;
             width: 95vw;
+            z-index: 1;
     }
 
     .esquerda span {
         display: flex;
-        margin-left: 24px;
+        margin-left: 9vw;
         font-size: 4em;
         justify-content: center;
     }
 
     .subTitulo {
-        margin-left: 10px;
+        margin-left: 9vw;
         font-size: 1.5em;
         text-align: center;
     }
@@ -456,7 +455,12 @@ body {
     }
 
     .GIF {
-        display: none;
+        margin-top: 0.3vh;
+    }
+
+    .GIF img{
+        width: 49vw;
+        height: 20vh;
     }
 
     .direita {
@@ -465,9 +469,10 @@ body {
 
     .direita img {
         position: absolute;
-        left: 2vw;
-        top: -45vh;
-        width: 130vw;
+        left: 1vw;
+        top: -97vh;
+        width: 97vw;
+        opacity: 0.7;
         height: auto;
     }
 
@@ -475,76 +480,11 @@ body {
 }
 
 @media(max-width: 431px) {
-    .videoLoop video {
-        width: 115%;
-    }
-
-    .nome {
-        top: 81%;
-        margin-left: 0;
-    }
-
-    .zenitsu {
-        font-size: 6.9vw;
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .titulo {
-        font-size: 4vw;
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .scroll {
-        left: 52%;
-    }
-
-    .imgDefundo {
-        height: 54vh;
-}
-    .fundo img {
-        height: 54vh;
-    }
-
-    .carrossel {
-        top: 6vh;
-    }
-
-    .fotos img {
-        width: 40vw;
-    }
-
-    .fotos {
-        height: 20vh;
-    }
-
-    .carrosselDois {
-        top: 30vh;
-    }
-
-    .fotosDois img {
-        width: 40vw;
-    }
-
-    .fotosDois {
-        height: 20vh;
-    }
-
-
 
     .info {
         flex-direction: column;
         width: 100vw;
         overflow: hidden;
-    }
-
-    .esquerda {
-        color: white;
-        display: flex;
-        flex-direction: column;
-        margin-top: -3em;
-            width: 95vw;
     }
 
     .esquerda span {
@@ -560,21 +500,13 @@ body {
         text-align: center;
     }
 
-    .descricao {
-        text-align: center;
-        margin-left: 4vw;
-        margin-top: 6vh;
-        max-width: 85vw;
+        .descricao {
         font-size: 1.9vh;
         line-height: 1.5;
     }
 
     .GIF {
         display: none;
-    }
-
-    .direita {
-        position: relative;
     }
 
     .direita img {
